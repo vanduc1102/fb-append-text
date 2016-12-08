@@ -1,0 +1,18 @@
+{
+	"appDesc": {
+		"message": "AAAAAAAAAAAAAAAAAAAA", 
+		"description":"VVVVVVVVVVVVVVVVVVVVVVVVVVVVVV."
+	},
+	"appTooltip":{
+		"message":"Like all",
+		"description":" The tile on browserIcon"
+	},
+	"iconTileFb":{
+		"message":"Like all",
+		"description":"Like all opend posts and comments of Facebook"
+	},
+	"iconTileLike":{
+		"message":"Like",
+		"description":"Like all"
+	}
+}

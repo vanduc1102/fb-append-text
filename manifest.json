@@ -1,0 +1,35 @@
+{
+  "name": "Append Text",
+  "short_name": "Append Text",
+  "description": "__MSG_appDesc__",
+  "version": "0.0.1",
+  "background": {
+    "scripts": ["scripts/utils.js","background.js"],
+	  "persistent": false
+  },
+  "permissions": [
+      "contextMenus",
+      "storage",
+      "tabs", 
+      "activeTab",
+      "https://*.facebook.com/*",
+      "http://*.facebook.com/*"
+  ],
+   "content_scripts": [
+    {
+      "matches": ["https://*.facebook.com/*", "http://*.facebook.com/*"],
+      "js": ["libs/jquery.js", "scripts/utils.js","scripts/content-script.js"],
+      "run_at": "document_start",
+      "all_frames":true
+    }
+  ]
+  ,
+  "icons": { 
+	  "16": "assets/icon16.png",
+    "48": "assets/icon48.png",
+    "128":"assets/icon128.png" 
+  },
+  "options_page": "options.html",
+  "default_locale": "en",
+  "manifest_version": 2
+}
